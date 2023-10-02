@@ -23,6 +23,8 @@ import Agentes.AgenteVendedorL; //se imprta libreria agente vendedor
  *
  * @author kaize
  */
+
+
 public class InterfazVendedor extends JFrame{
     private AgenteVendedorL myAgent; //se crea el agente vendedor y se asocia
     private JTextField titleFileld, priceField; //se crean variables para ingresar titulo y precio
@@ -83,3 +85,5 @@ public class InterfazVendedor extends JFrame{
         super.setVisible(true);
     }
 }
+
+

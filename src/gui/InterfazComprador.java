@@ -18,6 +18,8 @@ import Agentes.AgenteComprador;
  *
  * @author kaize
  */
+
+/*
 public class InterfazComprador extends JFrame {
     private AgenteComprador myAgent; // se asocia comprador 
     private JTextField titleField; // campo de texto para ingresar el titulo
@@ -54,4 +56,4 @@ public class InterfazComprador extends JFrame {
         return titleField.getText().trim();
     }
             
-}
+}*/
