@@ -34,8 +34,8 @@ public class solicitud extends Behaviour {
             case 0:
                 // se envia solicitud a los vendedores
                 ACLMessage cfp = new ACLMessage(ACLMessage.CFP);
-                for (int i = 0; i < bbAgent.obtenerAgenteVendedor().length; i++) {
-                    cfp.addReceiver(bbAgent.obtenerAgenteVendedor()[i]);
+                for (int i = 0; i < bbAgent.obtenerMejorVendedor().length; i++) {
+                    cfp.addReceiver(bbAgent.obtenerMejorVendedor()[i]);
                 }
 
                 cfp.setContent(tituloLibro);
@@ -60,7 +60,7 @@ public class solicitud extends Behaviour {
                         }
                     }
                     repliesCount++;
-                    if (repliesCount >= bbAgent.obtenerAgenteVendedor().length) {
+                    if (repliesCount >= bbAgent.obtenerMejorVendedor().length) {
                         step = 2;
                     }
                 } else {

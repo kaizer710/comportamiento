@@ -32,7 +32,7 @@ public void action(){
         ACLMessage reply = msg.createReply(); // crea una respuesta al mensaje recibido
         
         //intenta obtener precio del libro dentro del catalogo agente vendedor
-        Integer price = (Integer) bsAgent.obtenerCatalogo().get(title); //error porque no esta definido catalogo vendedor
+        Integer price = (Integer) bsAgent.getCatalogue().get(title); //error porque no esta definido catalogo vendedor
         
         if (price != null){
             //si el libro esta disponible se propone precio a comprador
